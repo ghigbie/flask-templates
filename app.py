@@ -5,8 +5,11 @@ app_name_foundation = "Chubby Puppy"
 
 @app.route('/')
 def index():
-    return render_template('base.html', app_name_foundation=app_name_foundation)
+    return render_template('home.html', app_name_foundation=app_name_foundation)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
