@@ -12,7 +12,7 @@ def about():
     return render_template('about.html', app_name_foundation=app_name_foundation)
 
 @app.route('/contact')
-def contac():
+def contact():
     return render_template('contact.html', app_name_foundation=app_name_foundation)
     
 if __name__ == '__main__':
