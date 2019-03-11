@@ -16,7 +16,7 @@ def contact():
     return render_template('contact.html', app_name_foundation=app_name_foundation)
 
 @app.route('/puppy/<name>')
-def pup_name(name):
+def puppy(name):
     return render_template('puppy.html', name=name)
     
 if __name__ == '__main__':
