@@ -1,6 +1,6 @@
-{% extends base.html %}
+{% extends "base.html" %}
 
 {% block content %}
     <h1>This puppy is named {{ name }}</h1>
-    <a href="{{ url_for('static', 'corg-glasses.png')}}">Puppy Picture</a>
+    <a href="{{ url_for('static', filename='corgi_glasses.png')}}">Puppy Picture</a>
 {% endblock %}
